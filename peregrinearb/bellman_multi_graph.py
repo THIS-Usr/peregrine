@@ -40,7 +40,8 @@ class NegativeWeightFinderMulti(NegativeWeightFinder):
         is why in bellman_ford, there are only len(self.graph) - 1 iterations of relaxing the edges. (The first
         iteration is completed in the method.)
         """
-        [self._process_edge_bunch(edge_bunch) for edge_bunch in self.graph.edge_bunches(data=True)]
+        if hasattr(self.graph, "edge_bunches"):
+          [self._process_edge_bunch(edge_bunch) for edge_bunch in self.graph.edge_bunches(data=True)]
 
     def _process_edge_bunch(self, edge_bunch):
         ideal_edge = get_least_edge_in_bunch(edge_bunch)
