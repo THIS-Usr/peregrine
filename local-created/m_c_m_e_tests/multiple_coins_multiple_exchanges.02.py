@@ -50,9 +50,9 @@ remove_pairs = ['B2X/BRL']
 # 'stex',  can cause rate limiting
 # 'binance', can cause rate limiting
 
-# exchanges = ['poloniex', 'bitfinex', 'kucoin', 'okex3', 'bittrex', 'coinbasepro']
+exchanges = ['poloniex', 'bitfinex', 'kucoin', 'okex3', 'bittrex', 'coinbasepro']
 
-exchanges = ['bittrex', 'gemini', 'kraken', 'exmo']
+# exchanges = ['bittrex', 'gemini', 'kraken', 'exmo']
 
 symbols_pre_fetch=['USDK','BTC','TRON','ETH','XTC','QTUM','PLG','ADA','DUSK','PAX','BLOC','BUSD','BCH','USDT']
 
