@@ -144,7 +144,7 @@ class SpecificCollectionBuilder(CollectionBuilder):
             except AttributeError:
                 raise ValueError("{} is not a valid property of {}".format(key, exchange.name))
 
-            if isinstance(actual_value, list):
+            if isinstance(actual_value, list) and len(actual_value) > 0: #  and len(actual_value) > 0 AS
                 # in all cases where an attribute of an exchange is a list, that list's elements' types are uniform
                 # so type of the first element == type of all elements
                 type_of_actual_value = type(actual_value[0])
